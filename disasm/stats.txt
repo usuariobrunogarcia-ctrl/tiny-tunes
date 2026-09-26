@@ -1,0 +1,11 @@
+page 0 ($8000): 11216/16384 bytes traced as code (68.5%), 877 labels
+page 1 ($8000):     0/16384 bytes traced as code (0.0%), 0 labels
+page 2 ($8000):  6530/16384 bytes traced as code (39.9%), 525 labels
+page 3 ($8000):  1858/16384 bytes traced as code (11.3%), 142 labels
+page 4 ($8000):  1127/16384 bytes traced as code (6.9%), 91 labels
+page 5 ($8000):  2163/16384 bytes traced as code (13.2%), 149 labels
+page 6 ($8000):  2490/16384 bytes traced as code (15.2%), 200 labels
+page 7 ($C000):  8299/16384 bytes traced as code (50.7%), 612 labels
+unresolved calls from fixed page into $8000-$BFFF: 0
+rejected entry points: 1
+  rejected page 7 $CEBF from ('table', 7, 52713)
