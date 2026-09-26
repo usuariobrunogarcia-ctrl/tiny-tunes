@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, user-scalable=no">
+<title>Tiny Toon Adventures - Nivel 1 (remake panorámico)</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; touch-action: none; }
+  body { display: flex; align-items: center; justify-content: center; }
+  canvas { display: block; width: 100vw; height: 100vh; }
+  #touch { position: fixed; inset: 0; pointer-events: none; display: none; }
+  #touch.on { display: block; }
+  #touch button {
+    position: absolute; pointer-events: auto; border: 2px solid rgba(255,255,255,.45);
+    background: rgba(255,255,255,.12); color: rgba(255,255,255,.8); border-radius: 50%;
+    font: bold 16px sans-serif; width: 64px; height: 64px; user-select: none; -webkit-user-select: none;
+  }
+  #touch .dpad { left: 16px; bottom: 16px; width: 200px; height: 136px; position: absolute; }
+  #touch .dpad button { border-radius: 12px; }
+  #b-left { left: 0; bottom: 36px; } #b-right { left: 136px; bottom: 36px; }
+  #b-up { left: 68px; bottom: 72px; width: 64px; height: 56px; } #b-down { left: 68px; bottom: 0; width: 64px; height: 56px; }
+  #b-a { right: 16px; bottom: 40px; } #b-b { right: 96px; bottom: 16px; }
+  #b-start { right: 16px; top: 16px; width: 72px; height: 36px; border-radius: 18px; font-size: 12px; }
+</style>
+</head>
+<body>
+<canvas id="screen"></canvas>
+<div id="touch">
+  <div class="dpad">
+    <button id="b-left" data-k="left">&#9664;</button><button id="b-right" data-k="right">&#9654;</button>
+    <button id="b-up" data-k="up">&#9650;</button><button id="b-down" data-k="down">&#9660;</button>
+  </div>
+  <button id="b-b" data-k="b">B</button><button id="b-a" data-k="a">A</button>
+  <button id="b-start" data-k="start">START</button>
+</div>
+<script src="lib/xBRjs.min.js"></script>
+<script src="data/world1.js"></script>
+<script src="js/game.js"></script>
+</body>
+</html>
